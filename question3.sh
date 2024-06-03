@@ -19,22 +19,22 @@ else
 fi
 
 
-I have a service named "ssh" on my system and checking its status by running:
-./check_service_status.sh ssh
+#I have a service named "ssh" on my system and checking its status by running:
+#./check_service_status.sh ssh
 
-Output:
-  Since,the service is running, the output would be:
-  The service 'ssh' is running.
+#Output:
+  #Since,the service is running, the output would be:
+  #The service 'ssh' is running.
 
-I have a service named "apache2" on my system and checking its status by running:
-./check_service_status.sh apache2
+#I have a service named "apache2" on my system and checking its status by running:
+#./check_service_status.sh apache2
 
-output:
-  Since,the service is not running, the output would be:
-  The service 'apache2' is not running.
+#output:
+  #Since,the service is not running, the output would be:
+  #The service 'apache2' is not running.
 
-Explanation:
-1.The script checks if a service name is provided as a command line argument.
-2.It uses the systemctl is-active --quiet <service_name> command to check if the service is running.
-3.Based on the exit status of the systemctl command, it outputs whether the specified service is running or not.
+#Explanation:
+#1.The script checks if a service name is provided as a command line argument.
+#2.It uses the systemctl is-active --quiet <service_name> command to check if the service is running.
+#3.Based on the exit status of the systemctl command, it outputs whether the specified service is running or not.
 
