@@ -30,35 +30,35 @@ for extension in "${!file_types[@]}"; do
 done | sort
 
 
-the directory structure is as follows:
+#the directory structure is as follows:
 
-test_directory/
-├── file1.txt
-├── file2.txt
-├── script.sh
-├── document.pdf
-└── subdir
-    ├── image.jpg
-    └── another_script.sh
+#test_directory/
+#├── file1.txt
+#├── file2.txt
+#├── script.sh
+#├── document.pdf
+#└── subdir
+    #├── image.jpg
+    #└── another_script.sh
 
-Running the script:
-./count_file_types.sh test_directory
-
-
-Output:
-  jpg: 1
-  pdf: 1
-  sh: 2
-  txt: 2
+#Running the script:
+#./count_file_types.sh test_directory
 
 
-Explanation:
+#Output:
+  #jpg: 1
+  #pdf: 1
+  #sh: 2
+  #txt: 2
 
-1.The script checks if the directory is provided as an argument.
-2.It uses an associative array to store the counts of each file type.
-3.The find command traverses the directory recursively and lists all files.
-4.For each file, the script extracts the file extension and updates the count in the associative array.
-5.Finally, the script prints the sorted list of file types along with their counts. The output is sorted alphabetically by file extension.
+
+#Explanation:
+
+#1.The script checks if the directory is provided as an argument.
+#2.It uses an associative array to store the counts of each file type.
+#3.The find command traverses the directory recursively and lists all files.
+#4.For each file, the script extracts the file extension and updates the count in the associative array.
+#5.Finally, the script prints the sorted list of file types along with their counts. The output is sorted alphabetically by file extension.
 
 
 
