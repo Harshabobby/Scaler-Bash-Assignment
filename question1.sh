@@ -28,8 +28,8 @@ most_active_user=$(awk '{print $1}' "$log_file" | sort | uniq -c | sort -nr | he
 echo "Most Active User: $most_active_user"
 
 
-Save the script to a file,log_analysis.sh.
-Make the script executable: chmod +x log_analysis.sh.
+Save the script to a file,log_analysis.sh
+Make the script executable: chmod +x log_analysis.sh
 Run the script and provide the log file path : ./log_analysis.sh /assignment.log
 
 
